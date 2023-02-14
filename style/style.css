@@ -1,0 +1,302 @@
+:root {
+    --white-background: #FFFFFF;
+    --secundary-text: #8E2424;
+    --main-font-color: #101828;
+    --links-color: #667085;
+    --red-backgound-secundary:rgb(142, 36, 36, 0.05);
+}
+
+* {
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+/* Inicio NavBar*/
+.content__navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em auto;
+}
+
+.content__navbar img{
+    width: 148px;
+}
+
+.menu_links {
+    display: flex;
+    list-style: none;
+}
+
+.item_link {
+    color: var(--links-color); 
+    text-decoration: none;
+    margin: 0 2em;
+}
+
+.btn__login{
+    color: var(--links-color);
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.btn__signup{
+    color: var(--white-background);
+    text-decoration: none;
+    margin: 0 1em;
+    background: var(--secundary-text);
+    padding: 0.5em 1.5em;
+    border-radius: 5px;
+}
+/*Fim Navbar*/
+
+/*Inicio Cabeçalho*/
+.container__header {
+    text-align: center;
+    align-items: center;
+    margin: 96px 0;
+}
+
+.subheading {
+    color: var(--secundary-text);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.title-first-section{
+    font-size: 48px;
+    font-weight: 500;
+    margin: 24px 0;
+}
+
+.content__description-text{
+    width: 792px;
+    height: 83px;
+    margin: 0 auto;
+}
+.description-text{
+    font-size: 20px;
+    color: var(--links-color);
+}
+/*Fim Cabeçalho*/
+
+/*Inicio Métricas*/
+.container__metrics {
+    display: flex;
+    width: 100%;
+    height: 192px;
+    justify-content: center;
+        
+}
+
+.content__metrics{
+    width: 85%;
+    margin: 0 32px;
+}
+
+.list-metrics {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.item-metrics {
+    width: 280px;
+    height: 168px;
+}
+.number-metrics{
+    color: var(--secundary-text);
+    font-size: 60px;
+}
+.title-metrics{
+    font-size: 18px;
+    color: var(--main-font-color);
+}
+.discription-metrics{
+    font-size: 16px;
+    color:var(--links-color);
+}
+/*Fim metricas*/
+
+/*Inicio Vagas*/
+.container__vacancies {
+    align-items: center;
+    text-align: center;
+    margin: 96px 0 0 0;
+    
+}
+
+.vacancy-subheading{
+    display: inline-block;
+    color: var(--secundary-text);
+    font-weight: bold;
+    font-size: 16px;
+    background: var(--red-backgound-secundary) ;
+    border-radius: 5px;
+}
+
+.vacancy-tile {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.vacancy-description {
+    font-size: 20px;
+    margin-bottom: 2em;
+}
+.img-vacancy {
+    width: 160vh;
+    height: 400px;
+}
+
+.content__open-positions{
+    width: 1280px;
+    margin-top: 3em;
+    padding: 0px 10em;
+
+}
+
+.designer-position{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.title-vagancy {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.vagancy-list {
+    list-style: none;
+}
+
+.vagancy-item {
+    display: grid;
+    grid-template-areas: 
+        "title title"
+        "time wage";
+    grid-template-columns: 1fr 6fr;
+    width: 100%;
+    padding: 1em 1em;
+    margin: 1.3em 0;
+    border: 1px solid;
+    border-color: #6670851a;
+    border-radius: 9px;
+}
+
+.title-position {
+    grid-area: title;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 2em;
+}
+
+.description-position-time {
+    grid-area: time;
+    font-size: 16px;
+    color: var(--links-color);
+}
+
+.description-position-wage {
+    grid-area: wage;
+    font-size: 16px;
+    color: var(--links-color);
+}
+/*Fim vagas*/
+
+/*Inicio depoimentos*/
+
+.content__depositions{
+    text-align: center;
+    width: 150vh;
+    margin: 0 auto;
+    margin-bottom: 96px ;    
+    padding: 64px;
+    background: var(--red-backgound-secundary);
+}
+.title-subheading{
+    font-size: 14px;
+    color: var(--secundary-text);
+    font-weight: bold;
+}
+
+.text-subheading{
+    font-size: 36px;
+    margin: 0.8em 0;
+}
+
+.img-avatar-deposition {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.avatar-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1em;
+}
+
+.avatar-office{
+    font-size: 16px;
+    color: var(--links-color);
+}
+
+/*Fim depoimentos*/
+
+.container__footer {
+    margin: 96px 0;
+    text-align: center;
+}
+
+.content__footer {
+    display: inline-block;
+    padding: 32px 0;
+}
+
+.footer-title {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.suport-text {
+    font-size: 20px;
+    color: var(--links-color);
+    margin-bottom: 16px;
+}
+
+.footer-form{
+    width: 360px;
+    height: 48px;
+    border: 1px solid var(--red-backgound-secundary);
+    border-radius: 9px;
+    padding: 1em;
+}
+
+.btn__signup-newsletter{
+    background: var(--secundary-text);
+    color: var(--white-background);
+    text-decoration: none;
+    width: 116px;
+    height: 48px;
+    margin: 0 1em;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-text {
+
+    font-size: 16px;
+    color: var(--links-color);
+}
